@@ -1,0 +1,31 @@
+package(default_visibility = ["//visibility:public"])
+
+load("@build_bazel_rules_nodejs//:defs.bzl", "npm_package")
+load("@npm_bazel_typescript//:index.bzl", "ts_library")
+
+filegroup(
+    name = 'sources',
+    srcs = [
+        'index.ts',
+    ],
+)
+
+npm_package(
+    name = 'package',
+    srcs = [
+        'package.json',
+    ],
+    deps = [
+        ':sources'
+    ],
+)
+
+ts_library(
+    name = 'tslib002',
+    srcs = [
+        ':sources'
+    ],
+    deps = [
+        '@npm//lodash'
+    ],
+)

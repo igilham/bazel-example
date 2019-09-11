@@ -22,3 +22,4 @@ bazel build //libs/jslib001
 - `//libs/jslib002`: Simple Javascript library with one external dependency
 - `//libs/jslib003`: Simple Javascript library with one internal dependency
 - `//libs/tslib001`: Simple Typescript library with no dependencies
+- `//libs/tslib002`: Simple Typescript library with one external dependency
