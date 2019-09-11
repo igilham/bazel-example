@@ -10,20 +10,20 @@ filegroup(
     ],
 )
 
+ts_library(
+    name = 'library',
+    srcs = [
+        ':sources',
+    ],
+    deps = [],
+)
+
 npm_package(
-    name = 'package',
+    name = 'tslib001',
     srcs = [
         'package.json',
     ],
     deps = [
-        ':sources'
+        ':library',
     ],
-)
-
-ts_library(
-    name = 'tslib001',
-    srcs = [
-        ':sources'
-    ],
-    deps = [],
 )

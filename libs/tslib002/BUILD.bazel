@@ -10,22 +10,22 @@ filegroup(
     ],
 )
 
-npm_package(
-    name = 'package',
-    srcs = [
-        'package.json',
-    ],
-    deps = [
-        ':sources'
-    ],
-)
-
 ts_library(
-    name = 'tslib002',
+    name = 'library',
     srcs = [
         ':sources'
     ],
     deps = [
         '@npm//lodash'
+    ],
+)
+
+npm_package(
+    name = 'tslib002',
+    srcs = [
+        'package.json',
+    ],
+    deps = [
+        ':library'
     ],
 )
