@@ -24,3 +24,4 @@ bazel build //libs/jslib001
 - `//libs/tslib001`: Simple Typescript library with no dependencies
 - `//libs/tslib002`: Simple Typescript library with one external dependency
 - `//libs/tslib003`: Simple Typescript library with one internal Typescript dependency (note: import paths are from workspace root in TS source code)
+- `//apps/jsapp00`: simple app with no dependencies

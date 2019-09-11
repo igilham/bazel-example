@@ -1,0 +1,28 @@
+package(default_visibility = ["//visibility:public"])
+
+load("@build_bazel_rules_nodejs//:defs.bzl", "npm_package", "nodejs_binary")
+
+filegroup(
+    name = 'sources',
+    srcs = [
+        'index.js',
+    ],
+)
+
+npm_package(
+    name = 'package',
+    srcs = [
+        'package.json'
+    ],
+    deps = [
+        ':sources',
+    ],
+)
+
+nodejs_binary(
+    name = 'jsapp001',
+    entry_point = ':index.js',
+    data = [
+        ':package'
+    ]
+)
