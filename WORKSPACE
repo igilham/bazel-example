@@ -13,7 +13,6 @@ http_archive(
 )
 
 load("@build_bazel_rules_nodejs//:defs.bzl", "yarn_install")
-
 yarn_install(
     name = 'npm',
     package_json = '//:package.json',
@@ -21,9 +20,8 @@ yarn_install(
 )
 
 load("@npm//:install_bazel_dependencies.bzl", "install_bazel_dependencies")
-
 install_bazel_dependencies()
 
-# load("@npm_bazel_typescript//:index.bzl", "ts_setup_workspace")
-
-# ts_setup_workspace()
+# Set up TypeScript toolchain
+load("@npm_bazel_typescript//:index.bzl", "ts_setup_workspace")
+ts_setup_workspace()
