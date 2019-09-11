@@ -10,11 +10,12 @@ filegroup(
 )
 
 npm_package(
-    name = 'jslib001',
+    name = 'jslib003',
     srcs = [
-        'package.json',
+        'package.json'
     ],
     deps = [
-        ':sources'
+        ':sources',
+        '//libs/jslib001',
     ],
 )
