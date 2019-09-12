@@ -1,30 +1,10 @@
-package(default_visibility = ["//visibility:public"])
-
 load("@build_bazel_rules_nodejs//:defs.bzl", "npm_package", "nodejs_binary", "rollup_bundle")
 load("@npm_bazel_typescript//:index.bzl", "ts_library")
-
-filegroup(
-    name = 'src',
-    srcs = [
-        'index.ts',
-    ],
-)
 
 ts_library(
     name = 'lib',
     srcs = [
-        ':src',
-    ],
-)
-
-npm_package(
-    name = 'pkg',
-    srcs = [
-        'package.json'
-    ],
-    deps = [
-        ':src',
-        ':lib',
+        'index.ts',
     ],
 )
 
@@ -34,4 +14,5 @@ rollup_bundle(
     deps = [
         ':lib',
     ],
+    visibility = ['//visibility:public'],
 )

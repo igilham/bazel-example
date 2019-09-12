@@ -1,5 +1,3 @@
-package(default_visibility = ["//visibility:public"])
-
 load("@build_bazel_rules_nodejs//:defs.bzl", "npm_package", "nodejs_binary", "rollup_bundle")
 
 filegroup(
@@ -25,7 +23,8 @@ nodejs_binary(
     entry_point = ':index.js',
     data = [
         ':pkg'
-    ]
+    ],
+    visibility = ['//visibility:public'],
 )
 
 rollup_bundle(
@@ -34,4 +33,5 @@ rollup_bundle(
     deps = [
         ':pkg',
     ],
+    visibility = ['//visibility:public'],
 )
