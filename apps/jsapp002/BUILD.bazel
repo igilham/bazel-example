@@ -1,0 +1,37 @@
+package(default_visibility = ["//visibility:public"])
+
+load("@build_bazel_rules_nodejs//:defs.bzl", "npm_package", "nodejs_binary", "rollup_bundle")
+
+filegroup(
+    name = 'sources',
+    srcs = [
+        'index.js',
+    ],
+)
+
+npm_package(
+    name = 'package',
+    srcs = [
+        'package.json'
+    ],
+    deps = [
+        ':sources',
+        '@npm//lodash',
+    ],
+)
+
+nodejs_binary(
+    name = 'jsapp002',
+    entry_point = ':index.js',
+    data = [
+        ':package'
+    ]
+)
+
+rollup_bundle(
+    name = 'bundle',
+    entry_point = ':index.js',
+    deps = [
+        ':package',
+    ],
+)
