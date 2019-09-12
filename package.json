@@ -5,7 +5,7 @@
     "lodash": "^4.17.15"
   },
   "devDependencies": {
-    "@bazel/jasmine": "latest",
+    "@bazel/jasmine": "^0.37.0",
     "@bazel/typescript": "^0.37.0",
     "typescript": "^3.6.3"
   },
