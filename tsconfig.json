@@ -1,5 +1,8 @@
 {
     "paths": {
         "bazel_example/libs/*": ["*"]
-    }
+    },
+    "types": [
+        "node"
+    ]
 }

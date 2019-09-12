@@ -2,6 +2,7 @@
   "name": "bazel_example",
   "private": true,
   "dependencies": {
+    "@types/node": "latest",
     "lodash": "^4.17.15"
   },
   "devDependencies": {
