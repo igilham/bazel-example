@@ -4,16 +4,16 @@ load("@build_bazel_rules_nodejs//:defs.bzl", "npm_package")
 load("@npm_bazel_typescript//:index.bzl", "ts_library")
 
 filegroup(
-    name = 'sources',
+    name = 'src',
     srcs = [
         'index.ts',
     ],
 )
 
 ts_library(
-    name = 'library',
+    name = 'lib',
     srcs = [
-        ':sources'
+        ':src'
     ],
     deps = [
         '@npm//lodash'
@@ -21,11 +21,11 @@ ts_library(
 )
 
 npm_package(
-    name = 'tslib002',
+    name = 'pkg',
     srcs = [
         'package.json',
     ],
     deps = [
-        ':library'
+        ':lib'
     ],
 )

@@ -3,27 +3,27 @@ package(default_visibility = ["//visibility:public"])
 load("@build_bazel_rules_nodejs//:defs.bzl", "npm_package", "nodejs_binary", "rollup_bundle")
 
 filegroup(
-    name = 'sources',
+    name = 'src',
     srcs = [
         'index.js',
     ],
 )
 
 npm_package(
-    name = 'package',
+    name = 'pkg',
     srcs = [
         'package.json'
     ],
     deps = [
-        ':sources',
+        ':src',
     ],
 )
 
 nodejs_binary(
-    name = 'jsapp001',
+    name = 'bin',
     entry_point = ':index.js',
     data = [
-        ':package'
+        ':pkg'
     ]
 )
 
@@ -31,6 +31,6 @@ rollup_bundle(
     name = 'bundle',
     entry_point = ':index.js',
     deps = [
-        ':package',
+        ':pkg',
     ],
 )
