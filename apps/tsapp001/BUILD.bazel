@@ -8,6 +8,13 @@ ts_library(
     ],
 )
 
+npm_package(
+    name = 'pkg',
+    srcs = ['package.json'],
+    deps = [':lib'],
+    visibility = ['//visibility:public'],
+)
+
 rollup_bundle(
     name = 'bundle',
     entry_point = 'index.js',
