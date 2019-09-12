@@ -18,15 +18,15 @@ bazel build //libs/jslib001
 
 ## Packages
 
-- `//libs/jslib001`: Simple Javascript library with no dependencies
-- `//libs/jslib002`: Simple Javascript library with one external dependency
-- `//libs/jslib003`: Simple Javascript library with one internal dependency
-- `//libs/tslib001`: Simple Typescript library with no dependencies
-- `//libs/tslib002`: Simple Typescript library with one external dependency
-- `//libs/tslib003`: Simple Typescript library with one internal Typescript dependency (note: import paths are from workspace root in TS source code)
-- `//apps/jsapp001`: simple app with no dependencies
-- `//apps/jsapp02`: simple app with one external dependency
-- `//apps/jsapp03`: simple app with one internal dependency
+- `//libs/jslib001`: Javascript library with no dependencies
+- `//libs/jslib002`: Javascript library with one external dependency
+- `//libs/jslib003`: Javascript library with one internal dependency
+- `//libs/tslib001`: Typescript library with no dependencies
+- `//libs/tslib002`: Typescript library with one external dependency
+- `//libs/tslib003`: Typescript library with one internal Typescript dependency (note: import paths are from workspace root in TS source code)
+- `//apps/jsapp001`: Javascript app with no dependencies
+- `//apps/jsapp02`: Javascript app with one external dependency
+- `//apps/jsapp03`: Javascript app with one internal dependency
 
 ## Notes
 
