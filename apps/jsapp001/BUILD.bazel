@@ -1,6 +1,6 @@
 package(default_visibility = ["//visibility:public"])
 
-load("@build_bazel_rules_nodejs//:defs.bzl", "npm_package", "nodejs_binary")
+load("@build_bazel_rules_nodejs//:defs.bzl", "npm_package", "nodejs_binary", "rollup_bundle")
 
 filegroup(
     name = 'sources',
@@ -25,4 +25,12 @@ nodejs_binary(
     data = [
         ':package'
     ]
+)
+
+rollup_bundle(
+    name = 'bundle',
+    entry_point = ':index.js',
+    deps = [
+        ':package',
+    ],
 )
