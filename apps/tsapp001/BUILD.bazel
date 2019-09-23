@@ -23,11 +23,11 @@ nodejs_binary(
     entry_point = ':index.ts',
 )
 
-# rollup_bundle(
-#     name = 'bundle',
-#     entry_point = 'index.js',
-#     deps = [
-#         ':lib',
-#     ],
-#     visibility = ['//visibility:public'],
-# )
+rollup_bundle(
+    name = 'bundle',
+    entry_point = ':index.ts',
+    deps = [
+        ':lib',
+    ],
+    visibility = ['//visibility:public'],
+)
