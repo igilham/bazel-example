@@ -3,6 +3,7 @@ load("@npm_bazel_typescript//:index.bzl", "ts_library")
 
 ts_library(
     name = 'tslib003',
+    module_name = '@igilham/tslib003',
     srcs = [
         'index.ts',
     ],
