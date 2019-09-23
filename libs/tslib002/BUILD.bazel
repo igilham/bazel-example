@@ -1,31 +1,13 @@
 load("@build_bazel_rules_nodejs//:defs.bzl", "npm_package")
 load("@npm_bazel_typescript//:index.bzl", "ts_library")
 
-filegroup(
-    name = 'src',
+ts_library(
+    name = 'tslib002',
     srcs = [
         'index.ts',
     ],
-)
-
-ts_library(
-    name = 'lib',
-    srcs = [
-        ':src'
-    ],
     deps = [
         '@npm//lodash'
-    ],
-    visibility = ['//visibility:public'],
-)
-
-npm_package(
-    name = 'pkg',
-    srcs = [
-        'package.json',
-    ],
-    deps = [
-        ':lib'
     ],
     visibility = ['//visibility:public'],
 )

@@ -13,8 +13,7 @@ npm_package(
         'package.json'
     ],
     deps = [
-        ':src',
-        '//libs/jslib001:pkg'
+        ':src'
     ],
 )
 
@@ -22,16 +21,15 @@ nodejs_binary(
     name = 'bin',
     entry_point = ':index.js',
     data = [
-        ':pkg'
-    ],
-    visibility = ['//visibility:public'],
+        ':pkg',
+        '//libs/jslib001:pkg'
+    ]
 )
 
-rollup_bundle(
-    name = 'bundle',
-    entry_point = ':index.js',
-    deps = [
-        ':pkg',
-    ],
-    visibility = ['//visibility:public'],
-)
+# rollup_bundle(
+#     name = 'bundle',
+#     entry_point = ':index.js',
+#     deps = [
+#         ':pkg',
+#     ],
+# )

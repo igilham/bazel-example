@@ -39,3 +39,5 @@ Most of the other `package.json` files are optional. They are only used if we ar
 Bazel's Typescript support adds the workspace root as an import path so you can refer to local packages easily. See the path in `tsconfig.json` and the import in `libs/tslib003/index.ts` for an example.
 
 Importing local Javascript packages is a little more difficult. I haven't figured out how to get the import to work yet.
+
+Bundling packages with `rollup` doesn't seem to work in all cases either. I don't know why not.
