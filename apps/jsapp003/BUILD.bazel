@@ -1,5 +1,3 @@
-package(default_visibility = ["//visibility:__pkg__"])
-
 load("@build_bazel_rules_nodejs//:defs.bzl", "npm_package", "nodejs_binary", "rollup_bundle")
 
 filegroup(

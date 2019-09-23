@@ -1,5 +1,3 @@
-package(default_visibility = ["//visibility:public"])
-
 load("@build_bazel_rules_nodejs//:defs.bzl", "npm_package")
 
 filegroup(
@@ -17,4 +15,5 @@ npm_package(
     deps = [
         ':src'
     ],
+    visibility = ['//visibility:public'],
 )

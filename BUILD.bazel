@@ -1,4 +1,12 @@
-exports_files([
-    "LICENSE",
-    "tsconfig.json",
-])
+exports_files(
+    [
+        "tsconfig.json"
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "node_modules",
+    srcs = glob(["node_modules/**/*"]),
+    visibility = ["//visibility:public"]
+)
