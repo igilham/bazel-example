@@ -15,6 +15,14 @@ npm_package(
     visibility = ['//visibility:public'],
 )
 
+nodejs_binary(
+    name = 'bin',
+    data = [
+        ':lib',
+    ],
+    entry_point = ':index.ts',
+)
+
 # rollup_bundle(
 #     name = 'bundle',
 #     entry_point = 'index.js',
