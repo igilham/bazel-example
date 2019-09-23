@@ -30,6 +30,7 @@ Path              | Description
 `//apps/jsapp002` | Javascript app with one external dependency
 `//apps/jsapp003` | Javascript app with one internal dependency
 `//apps/tsapp001` | Typescript app with no dependencies
+
 ## Notes
 
 The root `package.json` file is important for bootstrapping all the dependencies used in the repo.
