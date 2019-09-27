@@ -1,4 +1,4 @@
-load("@build_bazel_rules_nodejs//:defs.bzl", "npm_package")
+load("@build_bazel_rules_nodejs//:index.bzl", "npm_package")
 
 filegroup(
     name = 'src',
