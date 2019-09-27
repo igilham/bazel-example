@@ -8,6 +8,7 @@
     "@bazel/jasmine": "^0.37.0",
     "@bazel/typescript": "^0.37.0",
     "@types/node": "latest",
+    "rollup": "^1.21.4",
     "typescript": "^3.6.3"
   },
   "scripts": {

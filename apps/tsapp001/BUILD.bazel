@@ -23,11 +23,12 @@ nodejs_binary(
     entry_point = ':index.ts',
 )
 
-rollup_bundle(
-    name = 'bundle',
-    entry_point = ':index.ts',
-    deps = [
-        ':lib',
-    ],
-    visibility = ['//visibility:public'],
-)
+# legacy rollup_bundle rule is deprecated. Wait for new implementation to mature before upgrading
+# rollup_bundle(
+#     name = 'bundle',
+#     entry_point = ':index.ts',
+#     deps = [
+#         ':lib',
+#     ],
+#     visibility = ['//visibility:public'],
+# )
