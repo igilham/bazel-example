@@ -1,5 +1,7 @@
 # Bazel Example Monorepo
 
+[![CI Build Status](https://github.com/igilham/bazel-example/workflows/ci/badge.svg)](https://github.com/igilham/bazel-example/actions)
+
 This is my attempt to learn how to use Bazel as the build system for a monorepo.
 
 ## Build instructions
