@@ -4,6 +4,8 @@
 
 This is my attempt to learn how to use Bazel as the build system for a monorepo.
 
+I'm starting with Javascript and Typescript applications and libraries as I currently work in that ecosystem and the Bazel tools to facilitate this seem a little immature so far.
+
 ## Build instructions
 
 Build everything:
