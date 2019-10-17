@@ -20,6 +20,6 @@ jobs:
     - uses: ngalaiko/bazel-action@0.29.0
       with:
         args: build //...
-    - uses: ngalaiko/bazel-action@0.29.0
-      with:
-        args: test //...
+#    - uses: ngalaiko/bazel-action@0.29.0
+#      with:
+#        args: test //...
