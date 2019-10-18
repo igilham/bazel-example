@@ -1,11 +1,8 @@
 {
-  "name": "jsapp02",
+  "name": "javascript-external-deps",
   "version": "1.0.0",
-  "description": "",
+  "description": "Javascript app with an external dependency",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "",
   "license": "MIT",
   "dependencies": {
