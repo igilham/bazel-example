@@ -3,7 +3,7 @@ load("@npm_bazel_typescript//:index.bzl", "ts_library")
 
 ts_library(
     name = 'no_deps',
-    module_name = 'typescript_no_deps',
+    module_name = 'lib-typescript_no_deps',
     srcs = [
         'index.ts',
     ],

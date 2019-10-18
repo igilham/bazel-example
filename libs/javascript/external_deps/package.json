@@ -1,5 +1,5 @@
 {
-  "name": "javascript-external-deps",
+  "name": "lib-javascript-external-deps",
   "version": "1.0.0",
   "description": "Javascript package with an external dependency",
   "main": "index.js",

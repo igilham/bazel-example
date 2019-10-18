@@ -32,7 +32,7 @@ Path              | Description
 `//libs/typescript/internal_deps` | Typescript library with one internal Typescript dependency (note: import paths are from workspace root in TS source code)
 `//apps/javascript/no_deps` | Javascript app with no dependencies
 `//apps/javascript/external_deps` | Javascript app with one external dependency
-`//apps/jsapp003` | Javascript app with one internal dependency
+`//apps/javascript/internal_deps` | Javascript app with one internal dependency
 `//apps/tsapp001` | Typescript app with no dependencies
 
 ## Notes

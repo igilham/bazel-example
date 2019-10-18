@@ -1,7 +1,7 @@
 {
-  "name": "lib-javascript-internal-deps",
+  "name": "app-javascript-internal-deps",
   "version": "1.0.0",
-  "description": "Javascript package with one internal (repo-local) dependency",
+  "description": "Javascript app with an internal dependency",
   "main": "index.js",
   "author": "",
   "license": "MIT",

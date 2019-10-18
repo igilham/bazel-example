@@ -1,5 +1,5 @@
 {
-  "name": "javascript-no-deps",
+  "name": "lib-javascript-no-deps",
   "version": "1.0.0",
   "description": "Javascript package with no dependencies",
   "main": "index.js",
