@@ -26,7 +26,7 @@ Path              | Description
 ------------------|---------------
 `//libs/javascript/no_deps` | Javascript library with no dependencies
 `//libs/javascript/external_deps` | Javascript library with one external dependency
-`//libs/jslib003` | Javascript library with one internal dependency
+`//libs/javascript/internal_deps` | Javascript library with one internal dependency
 `//libs/tslib001` | Typescript library with no dependencies
 `//libs/tslib002` | Typescript library with one external dependency
 `//libs/tslib003` | Typescript library with one internal Typescript dependency (note: import paths are from workspace root in TS source code)
