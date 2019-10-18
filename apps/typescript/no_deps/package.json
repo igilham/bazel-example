@@ -1,11 +1,10 @@
 {
-  "name": "tsapp001",
+  "name": "app-typescript-no-deps",
   "version": "1.0.0",
-  "description": "",
+  "description": "Typescript app with no dependencies",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "MIT",

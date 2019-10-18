@@ -33,7 +33,7 @@ Path              | Description
 `//apps/javascript/no_deps` | Javascript app with no dependencies
 `//apps/javascript/external_deps` | Javascript app with one external dependency
 `//apps/javascript/internal_deps` | Javascript app with one internal dependency
-`//apps/tsapp001` | Typescript app with no dependencies
+`//apps/typescript/no_deps` | Typescript app with no dependencies
 
 ## Notes
 
