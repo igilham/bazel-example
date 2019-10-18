@@ -22,7 +22,7 @@ nodejs_binary(
     entry_point = ':index.js',
     data = [
         ':pkg',
-        '//libs/jslib001:pkg'
+        '//libs/javascript/no_deps:pkg'
     ]
 )
 

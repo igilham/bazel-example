@@ -14,7 +14,7 @@ npm_package(
     ],
     deps = [
         ':src',
-        '//libs/jslib001:pkg',
+        '//libs/javascript/no_deps:pkg',
     ],
     visibility = ['//visibility:public'],
 )

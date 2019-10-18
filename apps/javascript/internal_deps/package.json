@@ -1,0 +1,11 @@
+{
+  "name": "app-javascript-internal-deps",
+  "version": "1.0.0",
+  "description": "Javascript app with an internal dependency",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "lib-javascript-no-deps": "*"
+  }
+}
