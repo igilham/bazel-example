@@ -24,7 +24,7 @@ bazel build //libs/jslib001
 
 Path              | Description
 ------------------|---------------
-`//libs/jslib001` | Javascript library with no dependencies
+`//libs/javascript/no_deps` | Javascript library with no dependencies
 `//libs/jslib002` | Javascript library with one external dependency
 `//libs/jslib003` | Javascript library with one internal dependency
 `//libs/tslib001` | Typescript library with no dependencies
