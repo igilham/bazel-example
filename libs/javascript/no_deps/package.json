@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Javascript package with no dependencies",
   "main": "index.js",
-  "scripts": {
-    "test": "jest"
-  },
   "author": "",
   "license": "MIT"
 }
