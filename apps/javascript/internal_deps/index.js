@@ -1,5 +1,5 @@
-const jslib001 = require('jslib001')
+const lib = require('lib-javascript-no-deps')
 
 module.exports = () => {
-    console.log(jslib001())
+    console.log(lib())
 }

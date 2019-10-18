@@ -1,4 +1,4 @@
 // must use absolute workspace path to make imports work
-import tslib001 from '@igilham/tslib001'
+import lib from 'lib-typescript-no-deps'
 
-export default () => `I talk to tslib001: ${tslib001()}`
+export default () => `I talk to tslib001: ${lib()}`
