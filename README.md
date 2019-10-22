@@ -17,7 +17,7 @@ bazel build ...
 Build a package
 
 ```shell
-bazel build //libs/jslib001
+bazel build //libs/javascript/no_deps
 ```
 
 ## Packages
