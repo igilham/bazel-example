@@ -1,4 +1,5 @@
-load("@build_bazel_rules_nodejs//:index.bzl", "npm_package", "nodejs_binary", "rollup_bundle")
+load("@build_bazel_rules_nodejs//:index.bzl", "npm_package", "nodejs_binary")
+load("@npm_bazel_rollup//:index.bzl", "rollup_bundle")
 
 filegroup(
     name = 'src',
