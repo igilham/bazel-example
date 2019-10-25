@@ -16,6 +16,11 @@
     jasmine-core "~3.4.0"
     v8-coverage "1.0.9"
 
+"@bazel/rollup@^0.39.0":
+  version "0.39.0"
+  resolved "https://registry.yarnpkg.com/@bazel/rollup/-/rollup-0.39.0.tgz#b2c20a1436486020fc9dd86792799cfdabb6dd18"
+  integrity sha512-yMIPphGs7VzXVBhSW3petF3gVM/hQ1RajhwdnT69BCM9AOv3fEMJ8hjtBn43M8bQI8HbTQBFYdsaa4PT2z5GKg==
+
 "@bazel/typescript@^0.39.0":
   version "0.39.0"
   resolved "https://registry.yarnpkg.com/@bazel/typescript/-/typescript-0.39.0.tgz#9e4feef3038c94419b15fbe88eef467f0f076056"
