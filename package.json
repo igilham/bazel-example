@@ -6,12 +6,12 @@
   },
   "devDependencies": {
     "@bazel/ibazel": "^0.10.3",
-    "@bazel/jasmine": "^0.39.0",
-    "@bazel/rollup": "^0.39.0",
-    "@bazel/typescript": "^0.39.0",
+    "@bazel/jasmine": "^0.40.0",
+    "@bazel/rollup": "^0.40.0",
+    "@bazel/typescript": "^0.40.0",
     "@types/node": "^12.11.1",
     "rollup": "^1.25.2",
-    "typescript": "^3.6.3"
+    "typescript": "^3.7.0"
   },
   "scripts": {
     "build": "ibazel build //...",
