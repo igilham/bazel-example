@@ -6,9 +6,9 @@
   },
   "devDependencies": {
     "@bazel/ibazel": "^0.10.3",
-    "@bazel/jasmine": "0.41.0",
-    "@bazel/rollup": "0.41.0",
-    "@bazel/typescript": "0.41.0",
+    "@bazel/jasmine": "0.42.1",
+    "@bazel/rollup": "0.42.1",
+    "@bazel/typescript": "0.42.1",
     "@types/node": "^12.11.1",
     "rollup": "^1.25.2",
     "typescript": "^3.7.0"
