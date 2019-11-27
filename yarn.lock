@@ -7,24 +7,24 @@
   resolved "https://registry.yarnpkg.com/@bazel/ibazel/-/ibazel-0.10.3.tgz#2e2b8a1d3e885946eac41db2b1aa6801fb319887"
   integrity sha512-v1nXbMTHVlMM4z4uWp6XiRoHAyUlYggF1SOboLLWRp0+D22kWixqArWqnozLw2mOtnxr97BdLjluWiho6A8Hjg==
 
-"@bazel/jasmine@^0.40.0":
-  version "0.40.0"
-  resolved "https://registry.yarnpkg.com/@bazel/jasmine/-/jasmine-0.40.0.tgz#50820683e011153737eb3fc451ba5c05cc07034f"
-  integrity sha512-PQzLDu2hhNPNQutgWVTl8KT31QLGS4BJFKR8a3quTxNiZci/mSqJ/sdC9oF61f//vtj46uODesl/BpPZBYAT4g==
+"@bazel/jasmine@0.41.0":
+  version "0.41.0"
+  resolved "https://registry.yarnpkg.com/@bazel/jasmine/-/jasmine-0.41.0.tgz#4e9c1622b6ceacdcf12740098d8c99fc3cff6bfb"
+  integrity sha512-vbZaTx05Ab5ZbJ1TDHjwWvtrDYBh4miXVJBdFeSZtquLQ0FQb9iNdMTuDHkEF9aq6nqG+rnjUoQjjmDLC/uRkg==
   dependencies:
     jasmine "~3.4.0"
     jasmine-core "~3.4.0"
     v8-coverage "1.0.9"
 
-"@bazel/rollup@^0.40.0":
-  version "0.40.0"
-  resolved "https://registry.yarnpkg.com/@bazel/rollup/-/rollup-0.40.0.tgz#8ee08e1967c1ff7d549ce81b676872fa7e45afdb"
-  integrity sha512-7ZKzOIfHm0lEc3G/o2ykCZQlc7xcKSHiwIV4GIeaYJIbFUnO/L0cmaWzxOhdlr7NFfTdXcltTFnCrG7wlaad9A==
+"@bazel/rollup@0.41.0":
+  version "0.41.0"
+  resolved "https://registry.yarnpkg.com/@bazel/rollup/-/rollup-0.41.0.tgz#8dfaccc239f3efbae1c816b0ce2aeb6069d23582"
+  integrity sha512-M+ybGfcxTXnAS1QiaijLEfUznNYLA0cqeGXnYHSRrOhq2U7yesfavxbBtfLSKtg32ktmlHts5te8Zg82BS4DPQ==
 
-"@bazel/typescript@^0.40.0":
-  version "0.40.0"
-  resolved "https://registry.yarnpkg.com/@bazel/typescript/-/typescript-0.40.0.tgz#4f70d1365ee28fb8c1fd430a25034b74deecada9"
-  integrity sha512-826LXZYVlvcf9zNNcywzGprMUgCFqcwCeM/VLp+xG8/q6idJpqCBxABfJy2U6iZ8qIg5+wlxgYkOcmAZBfKMfA==
+"@bazel/typescript@0.41.0":
+  version "0.41.0"
+  resolved "https://registry.yarnpkg.com/@bazel/typescript/-/typescript-0.41.0.tgz#b767c4972cc42fd76c118f21e83e98860afdc249"
+  integrity sha512-i+PXf5BR7aUEA49V+D8OatHonNCDm2MhtjFwEJ7yKKLTPEm4riHWSDASNuOi4iAAe+EB8eKe1Fxh8iSjh/hm4A==
   dependencies:
     protobufjs "6.8.8"
     semver "5.6.0"
