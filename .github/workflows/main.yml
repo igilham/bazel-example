@@ -17,9 +17,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - uses: ngalaiko/bazel-action/1.2.0@1.2.0
+    - uses: ngalaiko/bazel-action/1.2.1@1.2.1
       with:
         args: build //...
-#    - uses: ngalaiko/bazel-action/1.1.0@1.1.0
+#    - uses: ngalaiko/bazel-action/1.2.1@1.2.1
 #      with:
 #        args: test //...
