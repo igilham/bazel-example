@@ -1,4 +1,4 @@
-load("@build_bazel_rules_nodejs//:index.bzl", "npm_package", "nodejs_binary")
+load("@build_bazel_rules_nodejs//:index.bzl", "pkg_npm", "nodejs_binary")
 # load("@npm_bazel_rollup//:index.bzl", "rollup_bundle")
 
 filegroup(
@@ -8,7 +8,7 @@ filegroup(
     ],
 )
 
-npm_package(
+pkg_npm(
     name = 'pkg',
     srcs = [
         'package.json'
