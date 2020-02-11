@@ -1,4 +1,4 @@
-name: CI
+name: Continuous Integration
 
 on:
   push:
@@ -7,26 +7,44 @@ on:
   pull_request:
     branches:
       - master
-  # schedule:
-  #   - cron: "14 3 1,8,15,22,29 * *"
+  schedule:
+    - cron: "14 3 1,15 * *"
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
+
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+
+    - name: Install yarn
+      run: npm install -g npm@latest yarn@latest
+
+    - name: Get yarn cache
+      id: yarn-cache
+      run: echo "::set-output name=dir::$(yarn cache dir)"
+
+    - name: Mount yarn cache
+      uses: actions/cache@v1
+      with:
+        path: ${{ steps.yarn-cache.outputs.dir }}
+        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-yarn-
+
     - name: Mount bazel cache
       uses: actions/cache@v1
       with:
         path: "/home/runner/.cache/bazel"
         key: bazel
-    - uses: actions/setup-node@v1
-      with:
-        node-version: '12.x'
-    - run: npm install -g npm@latest yarn@latest
+
     - run: yarn
+
     - run: yarn run build
+
     # - run: yarn run test
+
     - run: yarn run shutdown
