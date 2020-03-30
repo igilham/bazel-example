@@ -1,0 +1,8 @@
+{
+  "name": "lib-javascript-jest-test",
+  "version": "1.0.0",
+  "description": "Javascript package with a jest test",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT"
+}
