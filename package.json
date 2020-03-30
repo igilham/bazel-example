@@ -18,6 +18,7 @@
     "build": "bazelisk build //...",
     "test": "bazelisk test //...",
     "clean": "bazelisk clean",
-    "shutdown": "bazelisk shutdown"
+    "shutdown": "bazelisk shutdown",
+    "sync": "bazelisk sync"
   }
 }
