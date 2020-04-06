@@ -1,0 +1,40 @@
+load("@build_bazel_rules_nodejs//:index.bzl", "pkg_npm")
+load("//rules:jest.bzl", "jest_test")
+
+filegroup(
+    name = 'src',
+    srcs = [
+        'index.js',
+    ],
+)
+
+filegroup(
+    name = 'test_src',
+    srcs = [':src'] + glob(['__tests__/**/*.test.js']),
+)
+
+pkg_npm(
+    name = 'pkg',
+    srcs = [
+        'package.json',
+    ],
+    deps = [
+        ':src'
+    ],
+    visibility = ['//visibility:public'],
+)
+
+jest_test(
+    name = 'test',
+    srcs = [":test_src"],
+    jest_config = "//:jest.config.js",
+    tags = [
+        # Need to set the pwd to avoid jest needing a runfiles helper
+        # Windows users with permissions can use --enable_runfiles
+        # to make this test work
+        "no-bazelci-windows",
+    ],
+    deps = [
+        "@npm//:node_modules"
+    ],
+)

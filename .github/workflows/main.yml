@@ -35,16 +35,16 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-yarn-
 
-    - name: Mount bazel cache
-      uses: actions/cache@v1
-      with:
-        path: "/home/runner/.cache/bazel"
-        key: bazel
+    # - name: Mount bazel cache
+    #   uses: actions/cache@v1
+    #   with:
+    #     path: "/home/runner/.cache/bazel"
+    #     key: bazel
 
     - run: yarn
 
     - run: yarn run build
 
-    # - run: yarn run test
+    - run: yarn run test
 
     - run: yarn run shutdown
