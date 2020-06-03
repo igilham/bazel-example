@@ -6,7 +6,6 @@
   },
   "devDependencies": {
     "@bazel/bazelisk": "latest",
-    "@bazel/jasmine": "1.7.0",
     "@bazel/rollup": "1.7.0",
     "@bazel/typescript": "1.7.0",
     "@types/node": "^12.11.1",
