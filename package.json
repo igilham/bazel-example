@@ -6,11 +6,11 @@
   },
   "devDependencies": {
     "@bazel/bazelisk": "latest",
-    "@bazel/rollup": "1.7.0",
-    "@bazel/typescript": "1.7.0",
+    "@bazel/rollup": "2.0.0",
+    "@bazel/typescript": "2.0.0",
     "@types/node": "^12.11.1",
-    "rollup": "^1.25.2",
-    "typescript": "^3.8.0"
+    "rollup": "^2.3.0",
+    "typescript": "^3.9.0"
   },
   "scripts": {
     "build": "bazelisk build //...",
