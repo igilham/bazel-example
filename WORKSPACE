@@ -20,7 +20,3 @@ yarn_install(
 
 load("@npm//:install_bazel_dependencies.bzl", "install_bazel_dependencies")
 install_bazel_dependencies()
-
-# Set up TypeScript toolchain
-load("@npm//@bazel/typescript:index.bzl", "ts_setup_workspace")
-ts_setup_workspace()
