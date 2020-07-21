@@ -1,19 +1,19 @@
 load("@build_bazel_rules_nodejs//:index.bzl", "pkg_npm")
 
 filegroup(
-    name = 'src',
+    name = "src",
     srcs = [
-        'index.js',
+        "index.js",
     ],
 )
 
 pkg_npm(
-    name = 'pkg',
+    name = "pkg",
     srcs = [
-        'package.json',
+        "package.json",
     ],
+    visibility = ["//visibility:public"],
     deps = [
-        ':src'
+        ":src",
     ],
-    visibility = ['//visibility:public'],
 )
