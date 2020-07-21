@@ -1,38 +1,38 @@
-load("@build_bazel_rules_nodejs//:index.bzl", "pkg_npm", "nodejs_binary")
-load("@npm_bazel_rollup//:index.bzl", "rollup_bundle")
+load("@build_bazel_rules_nodejs//:index.bzl", "nodejs_binary", "pkg_npm")
+load("@npm//@bazel/rollup:index.bzl", "rollup_bundle")
 
 filegroup(
-    name = 'src',
+    name = "src",
     srcs = [
-        'index.js',
+        "index.js",
     ],
 )
 
 pkg_npm(
-    name = 'pkg',
+    name = "pkg",
     srcs = [
-        'package.json'
+        "package.json",
     ],
     deps = [
-        ':src',
-        '@npm//lodash',
+        ":src",
+        "@npm//lodash",
     ],
 )
 
 nodejs_binary(
-    name = 'bin',
-    entry_point = ':index.js',
+    name = "bin",
     data = [
-        ':pkg'
+        ":pkg",
     ],
-    visibility = ['//visibility:public'],
+    entry_point = ":index.js",
+    visibility = ["//visibility:public"],
 )
 
 rollup_bundle(
-    name = 'bundle',
-    entry_point = ':index.js',
+    name = "bundle",
+    entry_point = ":index.js",
+    visibility = ["//visibility:public"],
     deps = [
-        ':pkg',
+        ":pkg",
     ],
-    visibility = ['//visibility:public'],
 )

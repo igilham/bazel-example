@@ -1,12 +1,12 @@
 load("@build_bazel_rules_nodejs//:index.bzl", "pkg_npm")
-load("@npm_bazel_typescript//:index.bzl", "ts_library")
+load("@npm//@bazel/typescript:index.bzl", "ts_library")
 
 ts_library(
-    name = 'no_deps',
-    module_name = 'lib-typescript-no-deps',
+    name = "no_deps",
     srcs = [
-        'index.ts',
+        "index.ts",
     ],
+    module_name = "lib-typescript-no-deps",
+    visibility = ["//visibility:public"],
     deps = [],
-    visibility = ['//visibility:public'],
 )

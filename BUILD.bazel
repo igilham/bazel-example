@@ -1,6 +1,6 @@
 exports_files(
     [
-        "tsconfig.json"
+        "tsconfig.json",
     ],
     visibility = ["//visibility:public"],
 )
@@ -8,5 +8,5 @@ exports_files(
 filegroup(
     name = "node_modules",
     srcs = glob(["node_modules/**/*"]),
-    visibility = ["//visibility:public"]
+    visibility = ["//visibility:public"],
 )
