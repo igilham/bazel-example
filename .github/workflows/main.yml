@@ -39,7 +39,7 @@ jobs:
       uses: actions/cache@v2
       with:
         path: "/home/runner/.cache/bazel"
-        key: bazel
+        key: ${{ runner.os }}-bazel
 
     - run: yarn
 
