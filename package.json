@@ -2,7 +2,7 @@
   "name": "bazel_example",
   "private": true,
   "dependencies": {
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.19"
   },
   "devDependencies": {
     "@bazel/bazelisk": "latest",
