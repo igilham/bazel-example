@@ -1,12 +1,35 @@
-load("@build_bazel_rules_nodejs//:index.bzl", "pkg_npm")
 load("@npm//@bazel/typescript:index.bzl", "ts_library")
+load("@build_bazel_rules_nodejs//:index.bzl", "js_library")
+
+package(default_visibility=["//visibility:public"])
 
 ts_library(
-    name = "no_deps",
+    name = "compile",
     srcs = [
         "index.ts",
     ],
     module_name = "lib-typescript-no-deps",
-    visibility = ["//visibility:public"],
     deps = [],
+)
+
+filegroup(
+    name = "compiled_sources.js",
+    srcs = ["compile"],
+    output_group = "es6_sources",
+)
+
+# my_rule(
+#     name = "uses_js",
+#     deps = ["nodeps.js"],
+# )
+
+js_library(
+    name = "pkg",
+    package_name = "lib-typescript-no-deps",
+    srcs = [
+        "package.json",
+    ],
+    deps = [
+        ":compiled_sources.js",
+    ],
 )

@@ -1,0 +1,11 @@
+{
+  "name": "lib-typescript-internal-deps",
+  "version": "1.0.0",
+  "description": "Typescript package with internal dependencies",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "lib-typescript-no-deps": "*"
+  }
+}
