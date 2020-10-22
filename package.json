@@ -6,8 +6,8 @@
   },
   "devDependencies": {
     "@bazel/bazelisk": "latest",
-    "@bazel/rollup": "2.1.0",
-    "@bazel/typescript": "2.1.0",
+    "@bazel/rollup": "2.2.2",
+    "@bazel/typescript": "2.2.2",
     "@types/node": "^12.11.1",
     "rollup": "^2.3.0",
     "typescript": "^3.9.0"
