@@ -1,5 +1,7 @@
-import * as _ from 'lodash'
+const _ = require('lodash')
 
-module.exports = (something) => {
-    console.log(_.get(something, 'message', 'no_message'))
+const something = {
+    message: 'Hello world'
 }
+
+console.log(_.get(something, 'message', 'no message'))
