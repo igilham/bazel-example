@@ -1,4 +1,6 @@
-load("@build_bazel_rules_nodejs//:index.bzl", "pkg_npm")
+load("@build_bazel_rules_nodejs//:index.bzl", "js_library")
+
+package(default_visibility=["//visibility:public"])
 
 filegroup(
     name = "src",
@@ -7,13 +9,11 @@ filegroup(
     ],
 )
 
-pkg_npm(
+js_library(
     name = "pkg",
+    package_name = "lib-javascript-no-deps",
     srcs = [
         "package.json",
-    ],
-    visibility = ["//visibility:public"],
-    deps = [
-        ":src",
+        ":src"
     ],
 )

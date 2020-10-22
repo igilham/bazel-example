@@ -1,0 +1,8 @@
+{
+  "name": "lib-typescript-no-deps",
+  "version": "1.0.0",
+  "description": "Typescript package with no dependencies",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT"
+}

@@ -1,5 +1,6 @@
 {
     "paths": {
+        "ws/*": ["*"]
     },
     "types": [
         "node"
