@@ -1,5 +1,5 @@
 workspace(
-    name = "bazel_example",
+    name = "ws",
     managed_directories = {"@npm": ["node_modules"]},
 )
 
