@@ -1,13 +1,16 @@
 {
-  "name": "app-typescript-no-deps",
+  "name": "app-typescript-external-deps",
   "version": "1.0.0",
-  "description": "Typescript app with no dependencies",
+  "description": "Typescript app with external dependencies",
   "main": "index.js",
   "scripts": {
     "build": "tsc"
   },
   "author": "",
   "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.19"
+  },
   "devDependencies": {
     "typescript": "^3.9.0"
   }

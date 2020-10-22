@@ -1,0 +1,11 @@
+{
+  "name": "app-typescript-internal-deps",
+  "version": "1.0.0",
+  "description": "Typescript app with an internal dependency",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "lib-typescript-no-deps": "*"
+  }
+}

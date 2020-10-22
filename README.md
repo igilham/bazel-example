@@ -38,6 +38,8 @@ yarn exec bazelisk -- run //apps/javascript/no_deps:bin
 yarn exec bazelisk -- run //apps/javascript/internal_deps:bin
 yarn exec bazelisk -- run //apps/javascript/external_deps:bin
 yarn exec bazelisk -- run //apps/typescript/no_deps:bin
+yarn exec bazelisk -- run //apps/typescript/internal_deps:bin
+yarn exec bazelisk -- run //apps/typescript/external_deps:bin
 ```
 
 ## Packages

@@ -9,7 +9,10 @@ ts_library(
     srcs = [
         "index.ts",
     ],
-    module_name = "app-typescript-no-deps",
+    deps = [
+        "//libs/typescript/no_deps:compile",
+    ],
+    module_name = "app-typescript-internal-deps",
 )
 
 pkg_npm(
