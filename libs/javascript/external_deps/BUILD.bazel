@@ -1,4 +1,4 @@
-load("@build_bazel_rules_nodejs//:index.bzl", "pkg_npm")
+load("@build_bazel_rules_nodejs//:index.bzl", "js_library")
 
 filegroup(
     name = "src",
@@ -7,8 +7,9 @@ filegroup(
     ],
 )
 
-pkg_npm(
+js_library(
     name = "pkg",
+    package_name = "lib-javascript-external-deps",
     srcs = [
         "package.json",
     ],
