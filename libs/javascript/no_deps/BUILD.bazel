@@ -1,5 +1,7 @@
 load("@build_bazel_rules_nodejs//:index.bzl", "js_library")
 
+package(default_visibility=["//visibility:public"])
+
 filegroup(
     name = "src",
     srcs = [
@@ -12,9 +14,6 @@ js_library(
     package_name = "lib-javascript-no-deps",
     srcs = [
         "package.json",
-    ],
-    visibility = ["//visibility:public"],
-    deps = [
-        ":src",
+        ":src"
     ],
 )
