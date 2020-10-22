@@ -9,7 +9,10 @@ ts_library(
     srcs = [
         "index.ts",
     ],
-    module_name = "app-typescript-no-deps",
+    deps = [
+        "@npm//lodash",
+    ],
+    module_name = "app-typescript-external-deps",
 )
 
 pkg_npm(
