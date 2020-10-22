@@ -1,0 +1,39 @@
+load("@build_bazel_rules_nodejs//:index.bzl", "nodejs_binary", "pkg_npm")
+load("@npm//@bazel/typescript:index.bzl", "ts_library")
+# load("@npm_bazel_rollup//:index.bzl", "rollup_bundle")
+
+package(default_visibility=["//visibility:public"])
+
+ts_library(
+    name = "lib",
+    srcs = [
+        "index.ts",
+    ],
+    deps = [
+        "//libs/typescript/no_deps:compile",
+    ],
+    module_name = "app-typescript-internal-deps",
+)
+
+pkg_npm(
+    name = "pkg",
+    srcs = ["package.json"],
+    deps = [":lib"],
+)
+
+nodejs_binary(
+    name = "bin",
+    data = [
+        ":lib",
+    ],
+    entry_point = ":index.ts",
+)
+
+# legacy rollup_bundle rule is deprecated. Wait for new implementation to mature before upgrading
+# rollup_bundle(
+#     name = 'bundle',
+#     entry_point = ':index.ts',
+#     deps = [
+#         ':lib',
+#     ],
+# )
