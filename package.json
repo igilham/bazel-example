@@ -9,7 +9,7 @@
     "@bazel/rollup": "3.0.0",
     "@bazel/typescript": "3.0.0",
     "@types/node": "^12.11.1",
-    "rollup": "^2.3.0",
+    "rollup": "^2.79.2",
     "typescript": "^3.9.0"
   },
   "scripts": {
